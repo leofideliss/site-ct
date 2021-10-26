@@ -43,16 +43,46 @@
         </div>
     </header>
     <main>
+        <div class="info" id="info">
+            <div class="col-l">
+                <img src="/images/entrada-ct.jpg" alt="" width="600px">
+            </div>
+            <div class="col-r">
+                <h2>Sobre a empresa </h2>
+                <p>Pellentesque ultrices justo sem, non condimentum ante porttitor vel. Cras et purus metus. Etiam quam massa, scelerisque vehicula feugiat eget, placerat eu risus. Nam fringilla elit non scelerisque scelerisque. Integer mattis ex sit amet
+                    commodo sollicitudin. Nullam blandit commodo erat, a venenatis diam interdum non. Nunc eleifend, tellus et imperdiet ullamcorper, orci urna ultricies ante, quis hendrerit nulla neque a risus. Cras dapibus risus eu quam condimentum,
+                    id aliquam libero feugiat. Sed at tristique felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eget lectus id justo fringilla faucibus ac quis ex. Proin euismod, eros eu convallis
+                    lobortis, risus nulla facilisis lacus, nec cursus lacus eros hendrerit tortor. Aenean sodales metus sed sem mattis, eu ornare orci pretium. Proin ante velit, pretium ut quam in, efficitur condimentum felis.</p>
+            </div>
+        </div>
+        <div class="products" id="products">
+
+        </div>
         <div id="contact" class="contact">
-            <div class="col-map">
+            <div class="col-l">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.313027797358!2d-51.418070185048656!3d-22.11403768542068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f41a118e94d9%3A0x2090794d15ae1628!2sCurtume%20Touro%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1635191764770!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="col-form">
-                <form action="">
-                    <p> <span> Contatos </span></p>
-                    <p><img src="/images/phone_icon_black.svg" alt=""> +55 18 2101-9000</p>
-                    <p><img src="/images/mail_icon_black.svg" alt=""> contato@curtumetouro.com.br</p>
+            <div class="col-r">
+
+                <p> <span> Contatos </span></p>
+                <p><img src="/images/phone_icon_black.svg" alt=""> +55 18 2101-9000</p>
+                <p><img src="/images/mail_icon_black.svg" alt=""> contato@curtumetouro.com.br</p>
+
+                <p> <span class="att"> Atendimento </span></p>
+                <p>Segunda a sexta, das 7:30 às 17:30</p>
+                <form action="" id="form-contact" class="form-contact">
+                    <select name="departaments" id="departaments">
+                        <option value="">Departamento</option>
+                        <option value="sales">Vendas</option>
+                        <option value="purchase">Compras</option>
+                        <option value="financial">Financeiro</option>
+                    </select>
+                    <input type="text" placeholder="Assunto">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <textarea name="message" id="message" cols="70" rows="10" placeholder="Mensagem"></textarea>
+                    <button class="button-gold" type="submit">Enviar mensagem</button>
                 </form>
             </div>
         </div>
@@ -66,6 +96,7 @@
             <p> <span> Contatos </span></p>
             <p><img src="/images/phone_icon_white.svg" alt=""> +55 18 2101-9000</p>
             <p><img src="/images/mail_icon_white.svg" alt=""> contato@curtumetouro.com.br</p>
+
         </div>
         <div class="footer-col3">
             <p> Atendimento </p>
