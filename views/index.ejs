@@ -5,6 +5,10 @@
     <title>
         <%= title %>
     </title>
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css" />
+
+
     <link rel='stylesheet' href='/css/style.css' />
 </head>
 
@@ -44,15 +48,34 @@
     </header>
     <main>
         <div class="info" id="info">
+            <h2>Quem somos</h2>
             <div class="col-l">
                 <img src="/images/entrada-ct.jpg" alt="" width="600px">
             </div>
+
             <div class="col-r">
-                <h2>Sobre a empresa </h2>
-                <p>Pellentesque ultrices justo sem, non condimentum ante porttitor vel. Cras et purus metus. Etiam quam massa, scelerisque vehicula feugiat eget, placerat eu risus. Nam fringilla elit non scelerisque scelerisque. Integer mattis ex sit amet
-                    commodo sollicitudin. Nullam blandit commodo erat, a venenatis diam interdum non. Nunc eleifend, tellus et imperdiet ullamcorper, orci urna ultricies ante, quis hendrerit nulla neque a risus. Cras dapibus risus eu quam condimentum,
-                    id aliquam libero feugiat. Sed at tristique felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eget lectus id justo fringilla faucibus ac quis ex. Proin euismod, eros eu convallis
-                    lobortis, risus nulla facilisis lacus, nec cursus lacus eros hendrerit tortor. Aenean sodales metus sed sem mattis, eu ornare orci pretium. Proin ante velit, pretium ut quam in, efficitur condimentum felis.</p>
+
+                <p>A moderna tecnologia aplicada aos produtos Touro, o rigoroso controle de qualidade e a criatividade no desenvolvimento de produtos inovadores, garantem ao Grupo Touro, uma consolidada posição no exigente mercado internacional. <br> Desde
+                    1979 neste mercado, fornecendo couros semi-acabados e acabados, o Grupo Touro exporta para os países: Itália, Portugal, Espanha, África do Sul, Estados Unidos, Canadá, China, Taiwan, Vietnam, Coréia do Sul e outros.</p>
+            </div>
+
+            <div class="products-slide">
+                <img src="/images/procind-01.jpg" alt="">
+                <img src="/images/procind-02-1.jpg" alt="">
+                <img src="/images/procind-02b.jpg" alt="">
+                <img src="/images/procind-04.jpg" alt="">
+                <img src="/images/procind-05.jpg" alt="">
+                <img src="/images/procind-05b.jpg" alt="">
+                <img src="/images/procind-06.jpg" alt="">
+                <img src="/images/procind-07.jpg" alt="">
+                <img src="/images/procind-08.jpg" alt="">
+                <img src="/images/procind-09.jpg" alt="">
+                <img src="/images/procind-10.jpg" alt="">
+                <img src="/images/procind-11.jpg" alt="">
+                <img src="/images/procind-12.jpg" alt="">
+                <img src="/images/procind-13.jpg" alt="">
+                <img src="/images/procind-14.jpg" alt="">
+                <img src="/images/procind-15.jpg" alt="">
             </div>
         </div>
         <div class="products" id="products">
@@ -104,6 +127,19 @@
             <a href=""></a>
         </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+        $('.products-slide').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+        });
+    </script>
 </body>
 
 </html>

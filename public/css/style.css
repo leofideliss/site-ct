@@ -193,10 +193,25 @@ footer {
 .col-r p {
     display: flex;
     align-items: center;
+    text-align: justify;
+    width: 550px;
 }
 
 .col-r span {
     font-weight: bolder;
+}
+
+.info .col-r p {
+    line-height: 1.5;
+    height: 100px;
+}
+
+.info .col-r {
+    height: 400px !important;
+}
+
+.info .col-l {
+    height: 400px !important;
 }
 
 .att {
@@ -243,7 +258,9 @@ footer {
 
 .info {
     width: 100%;
-    height: 500px;
+    height: 800px;
+    text-align: center;
+    background-color: red;
 }
 
 .info .col-r {
@@ -254,4 +271,21 @@ footer {
     width: 100%;
     height: 500px;
     background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-slide {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.products-slide img {
+    width: 225px;
+    height: 235px;
+    background-color: white;
+    margin: 10px;
 }
