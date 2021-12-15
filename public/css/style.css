@@ -14,6 +14,8 @@ header {
     background: url("/images/ctouro-preto-branco.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    top: 0;
+    display: flex;
 }
 
 footer {
@@ -28,11 +30,45 @@ footer {
     width: 49%;
 }
 
+.col-50-l {
+    float: left;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-50-r {
+    float: right;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header-home {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-home-fix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 1px 1px 10px 1px #dcdcdc;
 }
 
 .text-home {
@@ -88,6 +124,10 @@ footer {
     align-items: center;
 }
 
+.language-sw-fix a {
+    color: black;
+}
+
 .menu-itens ul {
     color: white;
     list-style: none;
@@ -105,6 +145,7 @@ footer {
 .menu-itens a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .menu-itens a:hover {
@@ -203,11 +244,15 @@ footer {
 
 .info .col-r p {
     line-height: 1.5;
-    height: 100px;
+    height: 190px;
 }
 
 .info .col-r {
     height: 400px !important;
+}
+
+.info h2 {
+    margin-top: 40px;
 }
 
 .info .col-l {
@@ -260,32 +305,95 @@ footer {
     width: 100%;
     height: 800px;
     text-align: center;
-    background-color: red;
 }
 
 .info .col-r {
     margin-top: 26px;
 }
 
+.imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs-slide {
+    width: 1158px;
+    height: 250px;
+}
+
+.imgs-slide img {
+    width: 300px !important;
+    height: 225px !important;
+}
+
+.slick-slide {
+    margin-right: 10px;
+    width: 325px;
+}
+
+.slick-next:before {
+    color: grey;
+}
+
+.slick-prev:before {
+    color: grey;
+}
+
 .products {
     width: 100%;
-    height: 500px;
-    background-color: #dcdcdc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 600px;
+    /* background-color: whitesmoke; */
 }
 
-.products-slide {
-    width: 80%;
+.products img {
+    width: 555px;
+    height: 340px;
+}
+
+.cards {
+    width: 75%;
+    height: 85%;
     text-align: center;
+}
+
+.cards p {
+    text-align: justify;
+}
+
+.cards h3 {
+    color: #DAA520;
+}
+
+.cards img {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+}
+
+.titles {
+    font-size: 25px;
+    font-weight: 200;
+    width: 210px;
+    border-bottom: solid;
+    text-align: center;
+    border-width: 1px;
+    border-color: #DAA520;
+}
+
+.div-title {
     justify-content: center;
     display: flex;
 }
 
-.products-slide img {
-    width: 225px;
-    height: 235px;
-    background-color: white;
-    margin: 10px;
+.menu-itens-fix a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-itens-fix {
+    box-shadow: black;
 }
